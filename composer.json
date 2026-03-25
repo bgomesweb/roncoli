@@ -1,0 +1,39 @@
+{
+  "name": "bgomesweb/roncoli",
+  "description": "Roncoli Rolamentos e Retentores",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Bruno Gomes",
+      "email": "bgomesweb@gmail.com",
+      "homepage": "https://www.bgomesweb.com.br",
+      "role": "Developer"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "Source\\": "source/"
+    },
+    "files": [
+      "source/Boot/Config.php",
+      "source/Boot/Helpers.php",
+      "source/Boot/Minify/Web.php",
+      "source/Boot/Minify/App.php"
+    ]
+  },
+  "require": {
+    "php": "^7.4",
+    "ext-pdo": "^7.4",
+    "phpmailer/phpmailer": "~6.1",
+    "league/plates": "v4.0.0-alpha",
+    "matthiasmullie/minify": "^1.3",
+    "coffeecode/uploader": "^1.0",
+    "coffeecode/cropper": "1.3.*",
+    "coffeecode/optimizer": "2.0.*",
+    "coffeecode/paginator": "^1.0",
+    "coffeecode/router": "^1.0"
+  }
+}
